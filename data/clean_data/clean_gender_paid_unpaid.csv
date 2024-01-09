@@ -1,0 +1,137 @@
+COU,Country,Indicator,Sex,min_per_day
+AUS,Australia,time_unpaid,Men,171.6
+AUS,Australia,time_unpaid,Women,311.0
+AUS,Australia,time_paid,Men,304.1
+AUS,Australia,time_paid,Women,172.0
+AUT,Austria,time_unpaid,Men,135.3
+AUT,Austria,time_unpaid,Women,269.2
+AUT,Austria,time_paid,Men,364.8
+AUT,Austria,time_paid,Women,248.8
+BEL,Belgium,time_unpaid,Men,144.2
+BEL,Belgium,time_unpaid,Women,237.3
+BEL,Belgium,time_paid,Men,273.7
+BEL,Belgium,time_paid,Women,199.2
+CAN,Canada,time_unpaid,Men,148.1
+CAN,Canada,time_unpaid,Women,223.7
+CAN,Canada,time_paid,Men,340.5
+CAN,Canada,time_paid,Women,268.3
+DNK,Denmark,time_unpaid,Men,186.1
+DNK,Denmark,time_unpaid,Women,242.8
+DNK,Denmark,time_paid,Men,260.1
+DNK,Denmark,time_paid,Women,194.6
+FIN,Finland,time_unpaid,Men,157.5
+FIN,Finland,time_unpaid,Women,235.8
+FIN,Finland,time_paid,Men,248.6
+FIN,Finland,time_paid,Women,209.9
+FRA,France,time_unpaid,Men,134.9
+FRA,France,time_unpaid,Women,224.0
+FRA,France,time_paid,Men,235.1
+FRA,France,time_paid,Women,175.4
+DEU,Germany,time_unpaid,Men,150.4
+DEU,Germany,time_unpaid,Women,242.3
+DEU,Germany,time_paid,Men,289.5
+DEU,Germany,time_paid,Women,205.5
+GRC,Greece,time_unpaid,Men,95.1
+GRC,Greece,time_unpaid,Women,259.5
+GRC,Greece,time_paid,Men,274.3
+GRC,Greece,time_paid,Women,184.5
+HUN,Hungary,time_unpaid,Men,162.3
+HUN,Hungary,time_unpaid,Women,293.8
+HUN,Hungary,time_paid,Men,272.7
+HUN,Hungary,time_paid,Women,202.5
+IRL,Ireland,time_unpaid,Men,127.0
+IRL,Ireland,time_unpaid,Women,292.5
+IRL,Ireland,time_paid,Men,340.8
+IRL,Ireland,time_paid,Women,194.9
+ITA,Italy,time_unpaid,Men,130.7
+ITA,Italy,time_unpaid,Women,306.3
+ITA,Italy,time_paid,Men,220.8
+ITA,Italy,time_paid,Women,133.1
+JPN,Japan,time_unpaid,Men,40.8
+JPN,Japan,time_unpaid,Women,224.3
+JPN,Japan,time_paid,Men,451.8
+JPN,Japan,time_paid,Women,271.5
+KOR,Korea,time_unpaid,Men,49.0
+KOR,Korea,time_unpaid,Women,215.0
+KOR,Korea,time_paid,Men,419.0
+KOR,Korea,time_paid,Women,269.4
+MEX,Mexico,time_unpaid,Men,131.4
+MEX,Mexico,time_unpaid,Women,331.3
+MEX,Mexico,time_paid,Men,478.3
+MEX,Mexico,time_paid,Women,236.3
+NLD,Netherlands,time_unpaid,Men,145.4
+NLD,Netherlands,time_unpaid,Women,224.9
+NLD,Netherlands,time_paid,Men,284.9
+NLD,Netherlands,time_paid,Women,201.4
+NZL,New Zealand,time_unpaid,Men,141.0
+NZL,New Zealand,time_unpaid,Women,264.0
+NZL,New Zealand,time_paid,Men,338.0
+NZL,New Zealand,time_paid,Women,205.0
+NOR,Norway,time_unpaid,Men,168.5
+NOR,Norway,time_unpaid,Women,227.4
+NOR,Norway,time_paid,Men,277.4
+NOR,Norway,time_paid,Women,200.0
+POL,Poland,time_unpaid,Men,158.8
+POL,Poland,time_unpaid,Women,295.0
+POL,Poland,time_paid,Men,314.8
+POL,Poland,time_paid,Women,203.2
+PRT,Portugal,time_unpaid,Men,96.3
+PRT,Portugal,time_unpaid,Women,328.2
+PRT,Portugal,time_paid,Men,372.3
+PRT,Portugal,time_paid,Women,231.3
+ESP,Spain,time_unpaid,Men,145.9
+ESP,Spain,time_unpaid,Women,289.1
+ESP,Spain,time_paid,Men,236.2
+ESP,Spain,time_paid,Women,166.8
+SWE,Sweden,time_unpaid,Men,171.0
+SWE,Sweden,time_unpaid,Women,220.2
+SWE,Sweden,time_paid,Men,313.0
+SWE,Sweden,time_paid,Women,275.2
+TUR,Türkiye,time_unpaid,Men,67.6
+TUR,Türkiye,time_unpaid,Women,305.0
+TUR,Türkiye,time_paid,Men,358.3
+TUR,Türkiye,time_paid,Women,133.9
+GBR,United Kingdom,time_unpaid,Men,140.1
+GBR,United Kingdom,time_unpaid,Women,248.6
+GBR,United Kingdom,time_paid,Men,308.6
+GBR,United Kingdom,time_paid,Women,216.2
+USA,United States,time_unpaid,Men,165.8
+USA,United States,time_unpaid,Women,271.3
+USA,United States,time_paid,Men,331.7
+USA,United States,time_paid,Women,247.0
+CHN,China (People's Republic of),time_unpaid,Men,91.0
+CHN,China (People's Republic of),time_unpaid,Women,234.0
+CHN,China (People's Republic of),time_paid,Men,390.0
+CHN,China (People's Republic of),time_paid,Women,291.0
+EST,Estonia,time_unpaid,Men,160.2
+EST,Estonia,time_unpaid,Women,249.2
+EST,Estonia,time_paid,Men,264.1
+EST,Estonia,time_paid,Women,244.9
+IND,India,time_unpaid,Men,51.8
+IND,India,time_unpaid,Women,351.9
+IND,India,time_paid,Men,390.6
+IND,India,time_paid,Women,184.7
+LVA,Latvia,time_unpaid,Men,129.7
+LVA,Latvia,time_unpaid,Women,253.3
+LVA,Latvia,time_paid,Men,376.9
+LVA,Latvia,time_paid,Women,288.5
+SVN,Slovenia,time_unpaid,Men,166.5
+SVN,Slovenia,time_unpaid,Women,286.2
+SVN,Slovenia,time_paid,Men,299.8
+SVN,Slovenia,time_paid,Women,234.2
+ZAF,South Africa,time_unpaid,Men,102.9
+ZAF,South Africa,time_unpaid,Women,249.6
+ZAF,South Africa,time_paid,Men,294.2
+ZAF,South Africa,time_paid,Women,195.0
+LUX,Luxembourg,time_unpaid,Men,121.1
+LUX,Luxembourg,time_unpaid,Women,239.6
+LUX,Luxembourg,time_paid,Men,330.0
+LUX,Luxembourg,time_paid,Women,238.9
+LTU,Lithuania,time_unpaid,Men,151.6
+LTU,Lithuania,time_unpaid,Women,292.0
+LTU,Lithuania,time_paid,Men,354.3
+LTU,Lithuania,time_paid,Women,279.3
+OAVG,OECD - Average,time_unpaid,Men,136.5
+OAVG,OECD - Average,time_unpaid,Women,263.4
+OAVG,OECD - Average,time_paid,Men,317.8
+OAVG,OECD - Average,time_paid,Women,217.7

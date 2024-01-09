@@ -1,0 +1,7 @@
+﻿Model,RMSE Value
+Linear Regression,0.7298689
+Forward Stepwise  Selection ,0.7298689
+Backward Stepwise Selection ,0.7298689
+Ridge Regression ,0.6027686
+LASSO Regression,0.484732
+Random Forest,0.08925188
