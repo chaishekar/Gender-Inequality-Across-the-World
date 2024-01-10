@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>gender</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.qmd">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./gender.html#intro">
+ <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methodology" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Methodology</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-methodology">    
+        <li>
+    <a class="dropdown-item" href="./gender.html#data">
+ <span class="dropdown-text">Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gender.html#models">
+ <span class="dropdown-text">Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gender.html#results">
+ <span class="dropdown-text">Results</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./gender.html#conclusion">
+ <span class="menu-text">Conclusion</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/chaishekar/Gender-Inequality-Across-the-World"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<div style="text-align: center;">
+<p><b style="font-size: 35px; color: #efd7d7;">PREDICTION OF GENDER INEQUALITY ACROSS THE WORLD</b></p>
+</div>
+<section id="intro" class="level3">
+<h3 class="anchored" data-anchor-id="intro">ABSTRACT</h3>
+<p>Gender inequality remains a critical global challenge, impacting the lives of millions as well as social and economic progress. This study aims to explore various aspects of gender inequality worldwide and identify factors that influence these disparities and their changes over time. We utilized data from the United Nations Development Programme (UNDP) on the Gender Inequality Index (GII), our analysis focuses on predicting GII values using multiple regression models, including Linear Regression, Ridge Regression, LASSO Regression, and Random Forest. The performance of these models was assessed based on the Root Mean Square Error (RMSE). Our findings indicate that the Random Forest model demonstrates the highest accuracy in predicting GII values, providing valuable insights for policymakers and stakeholders to address gender inequality. By understanding the factors contributing to gender disparities and tracking their progress over time, we can better inform policies and strategies that promote gender equality and contribute to a more just and inclusive world.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">INTRODUCTION</h3>
+<p>Gender inequality remains a pressing global issue, affecting individuals and societies in various aspects such as education, employment, and political representation. Understanding the factors contributing to gender inequality is essential for developing effective policies and interventions that promote equity and empower individuals to realize their full potential.</p>
+<p>This report presents the findings of a research project that aimed to predict gender inequality worldwide using various methods, including linear regression, ridge regression, lasso regression, and random forest methods. By analyzing the Gender Inequality Index (GII) and its correlation with social, economic, and political factors, our research seeks to answer the question: How do we understand various aspects of gender inequality worldwide, and what factors influence these disparities and their changes over time?</p>
+<p>This report briefly outlines the methodologies used, presents the results of our analysis and discusses the implications of our findings for policy and future research. By identifying the most accurate model for predicting gender inequality and the key factors driving it, this research aims to inform policies and interventions that will promote gender equity and contribute to a more inclusive and prosperous world.</p>
+</section>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">BACKGROUND</h3>
+<p>Gender inequality refers to the unequal treatment or opportunities individuals face based on gender. It is a persistent issue that affects individuals and societies worldwide, impacting various areas of life, such as education, employment, and political representation. The Gender Inequality Index (GII) is a tool that measures gender inequality across countries, considering aspects such as reproductive health, empowerment, and economic status. Understanding the factors driving gender inequality is crucial for developing effective policies and interventions that promote equity and empowerment for all individuals. This research project aims to explore the key factors contributing to gender inequality worldwide using various regression methods.</p>
+</section>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">METHODOLOGY</h3>
+<section id="data" class="level4">
+<h4 class="anchored" data-anchor-id="data">Data Collection</h4>
+<p>The data collected for the Gender Inequality Index (GII) and six social, economic, and political factors (Maternal Mortality Ratio, Adolescent Birth Rate, Women’s Share of Seats in Parliament, Female Population with Some Secondary Education, Male Population with Some Secondary Education, Female Labor Force Participation Rate, and Male Labor Force Participation Rate) from the United Nations Development Programme (UNDP) database for 189 countries in 2021. The GII data was obtained from the Human Development Reports of the UNDP. We excluded other potential predictors of gender inequality, such as gender inequality index value and gender inequality index rank, due to their high correlation with the selected variables.</p>
+</section>
+<section id="data-preprocessing" class="level4">
+<h4 class="anchored" data-anchor-id="data-preprocessing">Data Preprocessing</h4>
+<p>The data has been cleaned and transformed to ensure consistency and comparability across countries. We checked for missing values, outliers, and data entry errors and made necessary corrections.</p>
+</section>
+<section id="models" class="level4">
+<h4 class="anchored" data-anchor-id="models">Statistical Models</h4>
+<p>To explore the factors contributing to gender inequality worldwide, we used multiple regression analysis. Specifically, we used four regression models – linear regression, ridge regression, lasso regression, and random forest – to predict the Gender Inequality Index (GII) based on six social, economic, and political factors: Maternal Mortality Ratio, Adolescent Birth Rate, Women Share of Seats in Parliament, Female Population with Some Secondary Education, Male Population with Some Secondary Education, Female Labor Force Participation Rate, and Male Labor Force Participation Rate. The data was split into 70% training data and 30% testing data.</p>
+<p>The regression models were fitted using the statistical software R, and we assessed their predictive accuracy using cross-validation.</p>
+<section id="linear-regression-model" class="level5">
+<h5 class="anchored" data-anchor-id="linear-regression-model">Linear Regression Model</h5>
+<p>In this study, we first used a linear regression model as the initial approach for predicting the Gender Inequality Index (GII) based on selected predictors. We utilized the lm() function in R to fit the model and selected the best subset of predictors using various subset selection methods such as minimum BIC, maximum adjusted R-squared, and minimum Cp. We also performed forward and backward stepwise selection to identify the optimal subset of predictors. We assessed the model’s performance by calculating the R-squared value and root mean squared error (RMSE) and visually inspecting the actual versus predicted plot.</p>
+</section>
+<section id="ridge-regression-model" class="level5">
+<h5 class="anchored" data-anchor-id="ridge-regression-model">Ridge Regression Model</h5>
+<p>We found evidence of multicollinearity among the predictor variables in the linear regression model. To address this issue, we explored using regularization methods, specifically ridge regression. Ridge regression is a technique that adds a penalty term to the regression equation, which helps to reduce the impact of multicollinearity on the model’s coefficients.</p>
+<p>Using the glmnet package in R, we applied ridge regression to our dataset and tuned the hyperparameter lambda using cross-validation. We evaluated the performance of the ridge regression model using the same metrics as the linear regression model, including R-squared and RMSE.</p>
+</section>
+<section id="lasso-regression-model" class="level5">
+<h5 class="anchored" data-anchor-id="lasso-regression-model">LASSO Regression Model</h5>
+<p>The LASSO (Least Absolute Shrinkage and Selection Operator) regression model to refine our predictions further and address the multicollinearity issue. LASSO regression is a linear regression that applies a penalty to the model coefficients, shrinking them towards zero and effectively eliminating predictors with little contribution to the model.</p>
+<p>Using the glmnet package in R, we fitted the LASSO regression model to our data and used cross- validation to tune the model’s regularization parameter, lambda. We then assessed the model’s predictive accuracy using the same metrics as the linear regression and ridge regression models, including R-squared, RMSE, and actual versus predicted plots.</p>
+</section>
+<section id="random-forest" class="level5">
+<h5 class="anchored" data-anchor-id="random-forest">Random Forest</h5>
+<p>We also used a random forest model to predict the Gender Inequality Index (GII). Random forest is a machine learning algorithm that builds multiple decision trees and combines their predictions to improve accuracy and reduce overfitting.</p>
+<p>Using the randomForest() function in R, we built a random forest model with 500 trees and utilized all the predictors in the dataset. We then used 10-fold cross-validation to evaluate the model’s predictive performance.</p>
+</section>
+</section>
+<section id="model-evaluation" class="level4">
+<h4 class="anchored" data-anchor-id="model-evaluation">Model Evaluation</h4>
+<p>After fitting multiple models, we must compare their performance to select the best one for our data. In our case, we fitted three models: linear regression, ridge regression, and LASSO regression. We also used the random forest to evaluate the importance of features and compare the models’ performance.</p>
+<p>To compare the models, we first evaluated their RMSE values. The RMSE value represents the difference between the actual and predicted values of the target variable (in our case, the GII). The model with the lowest RMSE value is considered the best-performing model.</p>
+</section>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">FINDINGS AND RESULTS</h3>
+<p>Based on the data collected for all countries, Figure 1 illustrates that many developed countries still hold high Gender Inequality Index (GII) scores. Additionally, the results show that Africa, South Asia, Mexico, and certain parts of South America have high levels of gender inequality, as indicated by their GII scores.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="././images/fig28.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The correlation heatmap (Figure 2) was generated to examine the relationships between various factors and their influence on the GII (Gender Inequality Index). Notably, the HDI (Human Development Index Rank) displays a strong positive correlation with the GII, with a correlation coefficient of 0.75. This finding challenges the conventional assumption that countries with high HDI rankings would exhibit lower levels of gender inequality. Contrary to this expectation, our analysis reveals that countries with high HDI rankings may face more severe issues related to gender inequality. This discovery underscores the need for further investigation into the underlying causes of these disparities and the development of targeted policy interventions to address them.</p>
+<p>After fitting the linear regression model using the lm() function in R, we assessed its predictive performance by calculating the R-squared value and root mean squared error (RMSE). The R- squared value of the model was 0.7049286, indicating that the model explains 70.49% of the variability in the Gender Inequality Index (GII). The RMSE of the model was 0.7298689, meaning that, on average, the model’s predictions were off by 0.7298689 units of GII.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/fig29.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>We also plotted the actual versus predicted values of GII to assess the model’s performance (Figure 3) visually. The plot showed a strong positive correlation between the actual and predicted values, with most data points falling close to the 45-degree line. This suggests that the linear regression model is a good fit for the data and provides accurate predictions of GII based on the selected predictors.</p>
+<p>We also performed forward and backward stepwise selection to identify the optimal subset of predictors for the model. After evaluating the performance of each model using cross-validation, we ultimately chose a linear regression model with eight predictors. The chosen model had an RMSE of 0.7298689, indicating that, on average, the model’s predictions were off by 0.7298689 units of GII.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/fig30.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>After performing ridge regression analysis on our dataset, we found that the optimal lambda value was 0.6448. Using this lambda value, we could fit a model and observed that as the log of lambda increased, the mean square error also increased, indicating the presence of some degree of bias in the model (Figure 4). Furthermore, the predicted values showed a strong positive correlation with the actual values, as shown in Figure 5. The ridge regression model’s root means squared error (RMSE) was 0.6027686. Overall, these results suggest that the ridge regression model can be an effective tool for predicting gender inequality index values based on various predictors and may provide valuable insights for policymakers and researchers in addressing gender inequality.</p>
+<p>Results of fitting a Lasso regression model to our data showed that as the log(lambda) value increases, the mean square error (MSE) value also increases (figure 6). After looking at the coefficients of the best model, there was no need to shrink the coefficients to zero in our model, indicating that all the predictor variables helped predict the response variable. The RMSE for the lasso regression model is 0.484732.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/fig31.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The random forest model presented in Figures 7 and 8 displayed typical behavior, where increasing the number of trees could enhance its performance on the dev set. Still, additional trees may provide little benefit beyond a certain point and could increase the risk of overfitting. Although the model seemed overfitting due to the substantial difference between the training set and dev set errors, the dev set error was still relatively low, indicating that the model was performing well on the dev set. The RMSE for the best model was 0.08925188, implying that the model’s predictive accuracy was high.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/fig32.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The performance of the best model (Figure 9) shows that increasing the number of trees in the model improves its performance. Specifically, as the number of trees in the model increases, the RMSE (root mean squared error) decreases, indicating that the model's predictive accuracy is improving.Moreover, the variable importance plot (Figure 10) highlighted the maternal mortality ratio as the most crucial factor for predicting GII, followed by female secondary education and adolescent birth rates. The importance of these variables is consistent with existing literature on gender inequality, where maternal health and education are considered critical factors for women's empowerment and gender equality.</p>
+<p><img src="./images/fig33.png" class="img-fluid"></p>
+<p>Based on the results presented in Table 1, we can see that the random forest model had the lowest RMSE value of 0.089, indicating that it performed the best in predicting the Gender Inequality Index (GII). This result is consistent with the random forest algorithm’s behavior, which effectively handles complex relationships in the data and reduces the risk of overfitting.</p>
+<p>We can also see that the other models’ RMSE values improved as more variables were included or as more complex methods were used, indicating that each step improved the model’s performance. However, the random forest model consistently outperformed the other models, indicating that it was better able to capture the patterns in the data and make accurate predictions.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">CONCLUSION</h3>
+<p>In the comparative analysis of various predictive models, the Random Forest algorithm demonstrated superior performance, achieving the lowest Root Mean Square Error (RMSE) value. This indicates that the Random Forest model offers greater accuracy relative to the other models examined in this study.</p>
+<p>While linear regression, ridge regression, and lasso regression techniques yielded higher RMSE values, they remain relevant in scenarios with limited data or fewer variables to analyze. Conversely, the Random Forest model provides a more robust and accurate prediction when handling intricate and highly correlated data, such as that found in the Gender Inequality Index. The investigation conclusively demonstrates that the Random Forest model is the most effective method for predicting gender disparities based on a diverse range of factors, including disparities in paid and unpaid labor, the Gender Inequality Index, and the gender wage gap. This critical insight can empower policymakers and stakeholders to make informed decisions and implement successful gender equity interventions.</p>
+<p>In conclusion, gender inequality continues to impact women and girls worldwide, leading to social disadvantages in various sectors, including the economy, education, and leadership. Despite progress in some nations, true gender parity remains elusive. In other words, gender inequality continues to be a tenacious and widespread issue across the globe, with the highest degrees of disparity concentrated in southern Africa, South Asia, and South America. These regions encounter distinct gender-related challenges, such as restricted access to education and healthcare, prejudiced social norms and customs, and limited employment opportunities for women.</p>
+<p>The empowerment of women is crucial for fostering economic growth and social progress. Implementing national and international policy reforms can dismantle structural obstacles that impede women’s access to leadership and enhance their involvement in many fields. Thus, understanding gender disparities and achieving gender equality is not only an ethical imperative for policymakers but also a vital route to a fairer and more prosperous society.</p>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">LIMITATIONS</h3>
+<p>One limitation of our study is the reliance on secondary data sources. While we used reputable databases, there may be limitations in the data quality or comparability across countries. Collecting more granular data on specific factors that influence gender inequality would provide more insights into the mechanisms driving these disparities. Despite this limitation, our analysis provides valuable insights into the key factors contributing to gender inequality index and highlights the need for policies and interventions that promote gender equity and empowerment.</p>
+</section>
+<section id="reference" class="level3">
+<h3 class="anchored" data-anchor-id="reference">REFERENCE</h3>
+<p>UNDP. (2021). Gender Inequality Index data In Human Development Reports <a href="https://hdr.undp.org/sites/default/files/2021-22_HDR/HDR21-22_Statistical_An%20nex_GII_Table.xlsx">https://hdr.undp.org/sites/default/files/2021-22_HDR/HDR21-22_Statistical_An nex_GII_Table.xlsx</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
